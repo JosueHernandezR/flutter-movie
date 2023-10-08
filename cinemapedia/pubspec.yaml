@@ -1,12 +1,14 @@
 name: cinemapedia
 description: A new Flutter project.
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
-  sdk: '>=3.1.2 <4.0.0'
+  sdk: ">=3.1.2 <4.0.0"
 
 dependencies:
+  animate_do: ^3.1.2
+  card_swiper: ^3.0.1
   dio: ^5.3.3
   flutter:
     sdk: flutter
