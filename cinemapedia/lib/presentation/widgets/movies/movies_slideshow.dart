@@ -1,5 +1,5 @@
-import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
+import 'package:animate_do/animate_do.dart';
 import 'package:card_swiper/card_swiper.dart';
 import 'package:cinemapedia/domain/entities/movie.dart';
 
@@ -23,8 +23,10 @@ class MoviesSlideShow extends StatelessWidget {
         scale: 0.9,
         autoplay: true,
         pagination: SwiperPagination(
+          margin: const EdgeInsets.only(top: 0),
           builder: DotSwiperPaginationBuilder(
             activeColor: colors.primary,
+            color: colors.secondary,
           ),
         ),
         itemBuilder: (context, index) => _Slide(movie: movies[index]),
